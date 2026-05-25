@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rinconcito Cuzcatleco | Antojitos Salvadoreños</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-mortar-pestle"></i> El Rinconcito
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="pupusa-menu-container">
+                <button id="btn-pupusa-menu" class="btn-menu"><i class="fa-solid fa-utensils"></i> Menú Pupusas</button>
+                <div id="pupusa-dropdown" class="dropdown-content hidden">
+                    <p>🫓 Revueltas</p>
+                    <p>🫓 Queso con Loroco</p>
+                    <p>🫓 Chicharrón</p>
+                    <p>🫓 Ayote</p>
+                    <p>🫓 Frijol con Queso</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>El Auténtico Sabor Cuzcatleco</h1>
+            <p>Disfruta de las mejores pupusas hechas a mano, tamales y el toque único de nuestra tradición.</p>
+            <a href="#contacto" class="cta-btn">Ordena Ya tu Pedido</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros-section">
+        <div class="container">
+            <h2>Nuestra Historia</h2>
+            <p>En <strong>El Rinconcito Cuzcatleco</strong>, llevamos más de 20 años compartiendo el secreto de la masa perfecta y el curtido con el toque exacto de sazón. Nacimos como un pequeño comal familiar y hoy somos el punto de encuentro de todos los amantes del buen comer salvadoreño. Usamos ingredientes 100% frescos y tradicionales.</p>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios-section">
+        <h2>Nuestros Servicios</h2>
+        <div class="grid-servicios">
+            <div class="card">
+                <i class="fa-solid fa-shop icon-service"></i>
+                <h3>Consumo en Local</h3>
+                <p>Disfruta de tus antojitos recién salidos del comal en un ambiente familiar y folclórico.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-motorcycle icon-service"></i>
+                <h3>Servicio a Domicilio</h3>
+                <p>Llevamos el sabor salvadoreño directo a la puerta de tu casa, caliente y listo.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-cake-candles icon-service"></i>
+                <h3>Eventos y Banquetes</h3>
+                <p>Atendemos tus fiestas, cumpleaños o reuniones corporativas con un buffet típico inolvidable.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto-section">
+        <h2>Contacto y Pedidos</h2>
+        <div class="form-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+                    <span class="error-msg" id="error-nombre"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ej. juan@correo.com">
+                    <span class="error-msg" id="error-email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Tu Pedido o Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Cuántas de revueltas vas a querer?"></textarea>
+                    <span class="error-msg" id="error-mensaje"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+            <div id="success-msg" class="success-box hidden">
+                ¡Gracias por tu mensaje! Nos pondremos en contacto contigo muy pronto. 🇸🇻
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> El Rinconcito Cuzcatleco. Todos los derechos reservados.</p>
+            <p class="credits">Desarrollado con ❤️ por tu Nombre</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
